@@ -1,0 +1,190 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.player.xd_movement.sneaking": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "is_sneaking": "query.is_sneaking"
+                        }
+                    ]
+                },
+                "is_sneaking": {
+                    "on_entry": [
+                        "/tag @s add is_sneaking",
+                        "/tag @s add is_shifting"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_sneaking"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove is_sneaking",
+                        "/tag @s remove is_shifting"
+                    ],
+                    "blend_transition": 1
+                }
+            }
+        },
+        "controller.animation.player.xd_movement.moving": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "is_walking": "query.modified_move_speed>=0.86&&query.modified_move_speed<=0.64&&query.is_on_ground"
+                        },
+                        {
+                            "is_sprinting": "query.modified_move_speed==1&&query.is_on_ground"
+                        },
+                        {
+                            "is_falling": "query.position_delta(1)>=0&&!query.has_any_family('scriptcmd')"
+                        }
+                    ]
+                },
+                "is_walking": {
+                    "on_entry": [
+                        "/tag @s add is_walking"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.modified_move_speed>=0.86&&!query.modified_move_speed<=0.64"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove is_walking"
+                    ],
+                    "blend_transition": 1
+                },
+                "is_falling": {
+                    "on_entry": [
+                        "/tag @s add is_falling"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.position_delta(1)<0||query.has_any_family('scriptcmd')"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove is_falling"
+                    ],
+                    "blend_transition": 1
+                },
+                "is_sprinting": {
+                    "on_entry": [
+                        "/tag @s add is_sprinting"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.modified_move_speed!=1"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove is_sprinting"
+                    ],
+                    "blend_transition": 1
+                }
+            }
+        },
+        "controller.animation.player.xd_movement.moving2": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "is_jumping": "query.is_jumping"
+                        },
+                        {
+                            "is_swimming": "query.is_swimming"
+                        }
+                    ]
+                },
+                "is_swimming": {
+                    "on_entry": [
+                        "/tag @s add is_swimming",
+                        "/tag @s remove is_afking"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_swimming"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove is_swimming",
+                        "/tag @s add is_afking"
+                    ],
+                    "blend_transition": 1
+                },
+                "is_jumping": {
+                    "on_entry": [
+                        "/tag @s add is_jumping"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_jumping"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove is_jumping"
+                    ],
+                    "blend_transition": 1
+                }
+            }
+        },
+        "controller.animation.player.xd_movement.moving3": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "is_moving": "query.is_moving"
+                        }
+                    ]
+                },
+                "is_moving": {
+                    "on_entry": [
+                        "/tag @s add is_moving",
+                        "/tag @s remove is_afking"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_moving"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove is_moving",
+                        "/tag @s add is_afking"
+                    ]
+                }
+            }
+        },
+        "controller.animation.player.xd_sleeping": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "is_sleeping": "query.is_sleeping"
+                        }
+                    ]
+                },
+                "is_sleeping": {
+                    "on_entry": [
+                        "/tag @s add is_sleeping"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.is_sleeping"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove is_sleeping"
+                    ]
+                }
+            }
+        }
+    }
+}

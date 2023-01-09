@@ -1,0 +1,1342 @@
+{
+    "format_version": "1.17.0",
+    "animation_controllers": {
+        "controller.animation.biome": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "bamboo_jungle": "query.biome_has_all_tags('animal', 'bamboo', 'jungle', 'monster', 'overworld') && !query.biome_has_all_tags('hills')"
+                        },
+                        {
+                            "bamboo_jungle_hills": "query.biome_has_all_tags('animal', 'bamboo', 'hills', 'jungle', 'monster', 'overworld')"
+                        },
+                        {
+                            "basalt_deltas": "query.biome_has_all_tags('nether', 'basalt_deltas', 'spawn_many_magma_cubes', 'spawn_ghast')"
+                        },
+                        {
+                            "beach": "query.biome_has_all_tags('beach', 'monster', 'overworld', 'warm')"
+                        },
+                        {
+                            "birch_forest": "query.biome_has_all_tags('animal', 'birch', 'forest', 'monster', 'overworld', 'bee_habitat') && !query.biome_has_all_tags('hills')"
+                        },
+                        {
+                            "birch_forest_hills": "query.biome_has_all_tags('animal', 'birch', 'forest', 'hills', 'monster', 'overworld', 'bee_habitat')"
+                        },
+                        {
+                            "birch_forest_hills_mutated": "query.biome_has_all_tags('animal', 'birch', 'forest', 'hills', 'monster', 'mutated', 'overworld_generation')"
+                        },
+                        {
+                            "birch_forest_mutated": "query.biome_has_all_tags('animal', 'birch', 'forest', 'monster', 'mutated', 'bee_habitat', 'overworld_generation')"
+                        },
+                        {
+                            "cold_beach": "query.biome_has_all_tags('beach', 'cold', 'monster', 'overworld')"
+                        },
+                        {
+                            "cold_ocean": "query.biome_has_all_tags('cold', 'monster', 'ocean', 'overworld')"
+                        },
+                        {
+                            "cold_taiga": "query.biome_has_all_tags('animal', 'cold', 'forest', 'monster', 'overworld', 'taiga') && !query.biome_has_all_tags('hills')"
+                        },
+                        {
+                            "cold_taiga_hills": "query.biome_has_all_tags('animal', 'cold', 'forest', 'hills', 'monster', 'overworld', 'taiga')"
+                        },
+                        {
+                            "cold_taiga_mutated": "query.biome_has_all_tags('animal', 'cold', 'forest', 'monster', 'mutated', 'taiga', 'overworld_generation')"
+                        },
+                        {
+                            "crimson_forest": "query.biome_has_all_tags('nether', 'netherwart_forest', 'crimson_forest', 'spawn_few_zombified_piglins', 'spawn_piglin')"
+                        },
+                        {
+                            "deep_cold_ocean": "query.biome_has_all_tags('cold', 'deep', 'monster', 'ocean', 'overworld')"
+                        },
+                        {
+                            "deep_frozen_ocean": "query.biome_has_all_tags('deep', 'frozen', 'monster', 'ocean', 'overworld')"
+                        },
+                        {
+                            "deep_lukewarm_ocean": "query.biome_has_all_tags('deep', 'lukewarm', 'monster', 'ocean', 'overworld')"
+                        },
+                        {
+                            "deep_ocean": "query.biome_has_all_tags('deep', 'monster', 'ocean', 'overworld') && !query.biome_has_all_tags('warm')"
+                        },
+                        {
+                            "deep_warm_ocean": "query.biome_has_all_tags('deep', 'monster', 'ocean', 'overworld', 'warm')"
+                        },
+                        {
+                            "desert": "query.biome_has_all_tags('desert', 'monster', 'overworld') && !query.biome_has_all_tags('hills')"
+                        },
+                        {
+                            "desert_hills": "query.biome_has_all_tags('desert', 'hills', 'monster', 'overworld')"
+                        },
+                        {
+                            "desert_mutated": "query.biome_has_all_tags('desert', 'monster', 'mutated', 'overworld_generation')"
+                        },
+                        {
+                            "dripstone_caves": "query.biome_has_all_tags('caves', 'overworld', 'dripstone_caves', 'monster')"
+                        },
+                        {
+                            "extreme_hills": "query.biome_has_all_tags('animal', 'extreme_hills', 'monster', 'overworld') && !query.biome_has_all_tags('edge', 'mountain', 'forest', 'mutated')"
+                        },
+                        {
+                            "extreme_hills_edge": "query.biome_has_all_tags('animal', 'edge', 'extreme_hills', 'monster', 'mountain', 'overworld')"
+                        },
+                        {
+                            "extreme_hills_mutated": "query.biome_has_all_tags('animal', 'extreme_hills', 'monster', 'mutated', 'overworld')"
+                        },
+                        {
+                            "extreme_hills_plus_trees": "query.biome_has_all_tags('animal', 'extreme_hills', 'forest', 'monster', 'mountain', 'overworld')"
+                        },
+                        {
+                            "extreme_hills_plus_trees_mutated": "query.biome_has_all_tags('animal', 'extreme_hills', 'forest', 'monster', 'mutated', 'overworld')"
+                        },
+                        {
+                            "flower_forest": "query.biome_has_all_tags('flower_forest', 'monster', 'mutated', 'overworld', 'bee_habitat')"
+                        },
+                        {
+                            "forest": "query.biome_has_all_tags('animal', 'forest', 'monster', 'overworld', 'bee_habitat')"
+                        },
+                        {
+                            "forest_hills": "query.biome_has_all_tags('animal', 'hills', 'monster', 'overworld', 'forest', 'bee_habitat')"
+                        },
+                        {
+                            "frozen_ocean": "query.biome_has_all_tags('frozen', 'monster', 'ocean', 'overworld')"
+                        },
+                        {
+                            "frozen_peaks": "query.biome_has_all_tags('mountains', 'monster', 'overworld')"
+                        },
+                        {
+                            "grove": "query.biome_has_all_tags('mountains', 'monster', 'overworld', 'grove')"
+                        },
+                        {
+                            "frozen_river": "query.biome_has_all_tags('frozen', 'overworld', 'river')"
+                        },
+                        {
+                            "hell": "query.biome_has_all_tags('nether', 'nether_wastes', 'spawn_magma_cubes', 'spawn_zombified_piglin', 'spawn_few_piglins', 'spawn_ghast', 'spawn_endermen')"
+                        },
+                        {
+                            "ice_mountains": "query.biome_has_all_tags('frozen', 'ice', 'mountain', 'overworld')"
+                        },
+                        {
+                            "ice_plains": "query.biome_has_all_tags('frozen', 'ice', 'ice_plains', 'overworld')"
+                        },
+                        {
+                            "ice_plains_spikes": "query.biome_has_all_tags('frozen', 'ice_plains', 'monster', 'mutated', 'overworld')"
+                        },
+                        {
+                            "jagged_peaks": "query.biome_has_all_tags('mountains', 'monster', 'overworld')"
+                        },
+                        {
+                            "jungle": "query.biome_has_all_tags('animal', 'jungle', 'monster', 'overworld', 'rare')"
+                        },
+                        {
+                            "jungle_edge": "query.biome_has_all_tags('animal', 'edge', 'jungle', 'monster', 'overworld')"
+                        },
+                        {
+                            "jungle_edge_mutated": "query.biome_has_all_tags('animal', 'edge', 'jungle', 'monster', 'mutated', 'overworld_generation')"
+                        },
+                        {
+                            "jungle_hills": "query.biome_has_all_tags('animal', 'hills', 'jungle', 'monster', 'overworld')"
+                        },
+                        {
+                            "jungle_mutated": "query.biome_has_all_tags('animal', 'jungle', 'monster', 'mutated', 'overworld_generation') && !query.biome_has_all_tags('edge')"
+                        },
+                        {
+                            "legacy_frozen_ocean": "query.biome_has_all_tags('frozen', 'ocean', 'overworld')"
+                        },
+                        {
+                            "lukewarm_ocean": "query.biome_has_all_tags('lukewarm', 'monster', 'ocean', 'overworld')"
+                        },
+                        {
+                            "lush_caves": "query.biome_has_all_tags('caves', 'lush_caves', 'overworld', 'monster')"
+                        },
+                        {
+                            "meadow": "query.biome_has_all_tags('mountains', 'monster', 'overworld', 'meadow', 'bee_habitat')"
+                        },
+                        {
+                            "mega_taiga": "query.biome_has_all_tags('animal', 'forest', 'mega', 'monster', 'overworld', 'rare', 'taiga')"
+                        },
+                        {
+                            "mega_taiga_hills": "query.biome_has_all_tags('animal', 'forest', 'hills', 'mega', 'monster', 'overworld', 'taiga')"
+                        },
+                        {
+                            "mesa": "query.biome_has_all_tags('mesa', 'monster', 'overworld') && !query.biome_has_all_tags('animal', 'mutated', 'plateau', 'rare', 'stone')"
+                        },
+                        {
+                            "mesa_bryce": "query.biome_has_all_tags('animal', 'mesa', 'monster', 'mutated', 'overworld')"
+                        },
+                        {
+                            "mesa_plateau": "query.biome_has_all_tags('mesa', 'monster', 'overworld', 'plateau', 'rare') && !query.biome_has_all_tags('stone')"
+                        },
+                        {
+                            "mesa_plateau_mutated": "query.biome_has_all_tags('mesa', 'monster', 'mutated', 'overworld', 'plateau', 'stone')"
+                        },
+                        {
+                            "mesa_plateau_stone": "query.biome_has_all_tags('mesa', 'monster', 'overworld', 'plateau', 'rare', 'stone')"
+                        },
+                        {
+                            "mesa_plateau_stone_mutated": "query.biome_has_all_tags('mesa', 'monster', 'mutated', 'overworld', 'plateau') && !query.biome_has_all_tags('stone')"
+                        },
+                        {
+                            "mushroom_island": "query.biome_has_all_tags('mooshroom_island', 'overworld') && !query.biome_has_all_tags('shore')"
+                        },
+                        {
+                            "mushroom_island_shore": "query.biome_has_all_tags('mooshroom_island', 'overworld', 'shore')"
+                        },
+                        {
+                            "ocean": "query.biome_has_all_tags('monster', 'ocean', 'overworld')"
+                        },
+                        {
+                            "plains": "query.biome_has_all_tags('animal', 'monster', 'overworld', 'plains', 'bee_habitat') && !query.biome_has_all_tags('mutated')"
+                        },
+                        {
+                            "redwood_taiga_hills_mutated": "query.biome_has_all_tags('animal', 'forest', 'hills', 'mega', 'monster', 'mutated', 'taiga', 'overworld_generation')"
+                        },
+                        {
+                            "redwood_taiga_mutated": "query.biome_has_all_tags('animal', 'forest', 'mega', 'monster', 'mutated', 'overworld', 'taiga')"
+                        },
+                        {
+                            "river": "query.biome_has_all_tags('overworld', 'river')"
+                        },
+                        {
+                            "roofed_forest": "query.biome_has_all_tags('animal', 'forest', 'monster', 'no_legacy_worldgen', 'overworld', 'roofed')"
+                        },
+                        {
+                            "roofed_forest_mutated": "query.biome_has_all_tags('animal', 'forest', 'monster', 'mutated', 'roofed', 'overworld_generation')"
+                        },
+                        {
+                            "savanna": "query.biome_has_all_tags('animal', 'monster', 'overworld', 'savanna') && !query.biome_has_all_tags('mutated', 'plateau')"
+                        },
+                        {
+                            "savanna_mutated": "query.biome_has_all_tags('animal', 'monster', 'mutated', 'overworld', 'savanna') && !query.biome_has_all_tags('plateau')"
+                        },
+                        {
+                            "savanna_plateau": "query.biome_has_all_tags('animal', 'monster', 'overworld', 'plateau', 'savanna') && !query.biome_has_all_tags('mutated')"
+                        },
+                        {
+                            "savanna_plateau_mutated": "query.biome_has_all_tags('animal', 'monster', 'mutated', 'overworld', 'plateau', 'savanna')"
+                        },
+                        {
+                            "snowy_slopes": "query.biome_has_all_tags('mountains', 'monster', 'overworld', 'snowy_slopes')"
+                        },
+                        {
+                            "soulsand_valley": "query.biome_has_all_tags('nether', 'soulsand_valley', 'spawn_ghast', 'spawn_endermen')"
+                        },
+                        {
+                            "stone_beach": "query.biome_has_all_tags('beach', 'monster', 'overworld', 'stone')"
+                        },
+                        {
+                            "stony_peaks": "query.biome_has_all_tags('mountains', 'monster', 'overworld')"
+                        },
+                        {
+                            "sunflower_plains": "query.biome_has_all_tags('animal', 'monster', 'mutated', 'overworld', 'plains', 'bee_habitat')"
+                        },
+                        {
+                            "swampland": "query.biome_has_all_tags('animal', 'monster', 'overworld', 'swamp')"
+                        },
+                        {
+                            "swampland_mutated": "query.biome_has_all_tags('animal', 'monster', 'mutated', 'swamp', 'overworld_generation')"
+                        },
+                        {
+                            "taiga": "query.biome_has_all_tags('animal', 'forest', 'monster', 'overworld', 'taiga') && !query.biome_has_all_tags('hills')"
+                        },
+                        {
+                            "taiga_hills": "query.biome_has_all_tags('animal', 'forest', 'hills', 'monster', 'overworld', 'taiga')"
+                        },
+                        {
+                            "taiga_mutated": "query.biome_has_all_tags('animal', 'forest', 'monster', 'mutated', 'taiga', 'overworld_generation')"
+                        },
+                        {
+                            "the_end": "query.biome_has_all_tags('the_end')"
+                        },
+                        {
+                            "warm_ocean": "query.biome_has_all_tags('monster', 'ocean', 'overworld', 'warm')"
+                        },
+                        {
+                            "warped_forest": "query.biome_has_all_tags('nether', 'netherwart_forest', 'warped_forest', 'spawn_endermen')"
+                        }
+                    ]
+                },
+                "bamboo_jungle": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add bamboo_jungle"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove bamboo_jungle"
+                    ]
+                },
+                "bamboo_jungle_hills": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add bamboo_jungle_hills"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove bamboo_jungle_hills"
+                    ]
+                },
+                "basalt_deltas": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add basalt_deltas"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove basalt_deltas"
+                    ]
+                },
+                "beach": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add beach"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove beach"
+                    ]
+                },
+                "birch_forest": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add birch_forest"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove birch_forest"
+                    ]
+                },
+                "birch_forest_hills": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add birch_forest_hills"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove birch_forest_hills"
+                    ]
+                },
+                "birch_forest_hills_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add birch_forest_hills_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove birch_forest_hills_mutated"
+                    ]
+                },
+                "birch_forest_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add birch_forest_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove birch_forest_mutated"
+                    ]
+                },
+                "cold_beach": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add cold_beach"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove cold_beach"
+                    ]
+                },
+                "cold_ocean": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add cold_ocean"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove cold_ocean"
+                    ]
+                },
+                "cold_taiga": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add cold_taiga"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove cold_taiga"
+                    ]
+                },
+                "cold_taiga_hills": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add cold_taiga_hills"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove cold_taiga_hills"
+                    ]
+                },
+                "cold_taiga_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add cold_taiga_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove cold_taiga_mutated"
+                    ]
+                },
+                "crimson_forest": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add crimson_forest"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove crimson_forest"
+                    ]
+                },
+                "deep_cold_ocean": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add deep_cold_ocean"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove deep_cold_ocean"
+                    ]
+                },
+                "deep_frozen_ocean": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add deep_frozen_ocean"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove deep_frozen_ocean"
+                    ]
+                },
+                "deep_lukewarm_ocean": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add deep_lukewarm_ocean"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove deep_lukewarm_ocean"
+                    ]
+                },
+                "deep_ocean": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add deep_ocean"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove deep_ocean"
+                    ]
+                },
+                "deep_warm_ocean": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add deep_warm_ocean"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove deep_warm_ocean"
+                    ]
+                },
+                "desert": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add desert"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove desert"
+                    ]
+                },
+                "desert_hills": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add desert_hills"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove desert_hills"
+                    ]
+                },
+                "desert_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add desert_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove desert_mutated"
+                    ]
+                },
+                "dripstone_caves": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add dripstone_caves"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove dripstone_caves"
+                    ]
+                },
+                "extreme_hills": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add extreme_hills"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove extreme_hills"
+                    ]
+                },
+                "extreme_hills_edge": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add extreme_hills_edge"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove extreme_hills_edge"
+                    ]
+                },
+                "extreme_hills_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add extreme_hills_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove extreme_hills_mutated"
+                    ]
+                },
+                "extreme_hills_plus_trees": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add extreme_hills_plus_trees"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove extreme_hills_plus_trees"
+                    ]
+                },
+                "extreme_hills_plus_trees_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add extreme_hills_plus_trees_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove extreme_hills_plus_trees_mutated"
+                    ]
+                },
+                "flower_forest": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add flower_forest"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove flower_forest"
+                    ]
+                },
+                "forest": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add forest"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove forest"
+                    ]
+                },
+                "forest_hills": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add forest_hills"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove forest_hills"
+                    ]
+                },
+                "frozen_ocean": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add frozen_ocean"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove frozen_ocean"
+                    ]
+                },
+                "frozen_peaks": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add frozen_peaks"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove frozen_peaks"
+                    ]
+                },
+                "grove": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add grove"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove grove"
+                    ]
+                },
+                "frozen_river": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add frozen_river"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove frozen_river"
+                    ]
+                },
+                "hell": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add hell"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove hell"
+                    ]
+                },
+                "ice_mountains": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add ice_mountains"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove ice_mountains"
+                    ]
+                },
+                "ice_plains": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add ice_plains"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove ice_plains"
+                    ]
+                },
+                "ice_plains_spikes": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add ice_plains_spikes"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove ice_plains_spikes"
+                    ]
+                },
+                "jagged_peaks": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add jagged_peaks"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove jagged_peaks"
+                    ]
+                },
+                "jungle": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add jungle"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove jungle"
+                    ]
+                },
+                "jungle_edge": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add jungle_edge"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove jungle_edge"
+                    ]
+                },
+                "jungle_edge_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add jungle_edge_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove jungle_edge_mutated"
+                    ]
+                },
+                "jungle_hills": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add jungle_hills"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove jungle_hills"
+                    ]
+                },
+                "jungle_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add jungle_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove jungle_mutated"
+                    ]
+                },
+                "legacy_frozen_ocean": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add legacy_frozen_ocean"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove legacy_frozen_ocean"
+                    ]
+                },
+                "lukewarm_ocean": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add lukewarm_ocean"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove lukewarm_ocean"
+                    ]
+                },
+                "lush_caves": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add lush_caves"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove lush_caves"
+                    ]
+                },
+                "meadow": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add meadow"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove meadow"
+                    ]
+                },
+                "mega_taiga": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add mega_taiga"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove mega_taiga"
+                    ]
+                },
+                "mega_taiga_hills": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add mega_taiga_hills"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove mega_taiga_hills"
+                    ]
+                },
+                "mesa": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add mesa"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove mesa"
+                    ]
+                },
+                "mesa_bryce": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add mesa_bryce"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove mesa_bryce"
+                    ]
+                },
+                "mesa_plateau": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add mesa_plateau"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove mesa_plateau"
+                    ]
+                },
+                "mesa_plateau_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add mesa_plateau_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove mesa_plateau_mutated"
+                    ]
+                },
+                "mesa_plateau_stone": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add mesa_plateau_stone"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove mesa_plateau_stone"
+                    ]
+                },
+                "mesa_plateau_stone_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add mesa_plateau_stone_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove mesa_plateau_stone_mutated"
+                    ]
+                },
+                "mushroom_island": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add mushroom_island"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove mushroom_island"
+                    ]
+                },
+                "mushroom_island_shore": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add mushroom_island_shore"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove mushroom_island_shore"
+                    ]
+                },
+                "ocean": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add ocean"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove ocean"
+                    ]
+                },
+                "plains": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add plains"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove plains"
+                    ]
+                },
+                "redwood_taiga_hills_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add redwood_taiga_hills_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove redwood_taiga_hills_mutated"
+                    ]
+                },
+                "redwood_taiga_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add redwood_taiga_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove redwood_taiga_mutated"
+                    ]
+                },
+                "river": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add river"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove river"
+                    ]
+                },
+                "roofed_forest": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add roofed_forest"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove roofed_forest"
+                    ]
+                },
+                "roofed_forest_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add roofed_forest_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove roofed_forest_mutated"
+                    ]
+                },
+                "savanna": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add savanna"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove savanna"
+                    ]
+                },
+                "savanna_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add savanna_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove savanna_mutated"
+                    ]
+                },
+                "savanna_plateau": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add savanna_plateau"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove savanna_plateau"
+                    ]
+                },
+                "savanna_plateau_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add savanna_plateau_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove savanna_plateau_mutated"
+                    ]
+                },
+                "snowy_slopes": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add snowy_slopes"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove snowy_slopes"
+                    ]
+                },
+                "soulsand_valley": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add soulsand_valley"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove soulsand_valley"
+                    ]
+                },
+                "stone_beach": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add stone_beach"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove stone_beach"
+                    ]
+                },
+                "stony_peaks": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add stony_peaks"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove stony_peaks"
+                    ]
+                },
+                "sunflower_plains": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add sunflower_plains"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove sunflower_plains"
+                    ]
+                },
+                "swampland": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add swampland"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove swampland"
+                    ]
+                },
+                "swampland_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add swampland_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove swampland_mutated"
+                    ]
+                },
+                "taiga": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add taiga"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove taiga"
+                    ]
+                },
+                "taiga_hills": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add taiga_hills"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove taiga_hills"
+                    ]
+                },
+                "taiga_mutated": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add taiga_mutated"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove taiga_mutated"
+                    ]
+                },
+                "the_end": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add the_end"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove the_end"
+                    ]
+                },
+                "warm_ocean": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add warm_ocean"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove warm_ocean"
+                    ]
+                },
+                "warped_forest": {
+                    "transitions": [
+                        {
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/tag @s add warped_forest"
+                    ],
+                    "on_exit": [
+                        "/tag @s remove warped_forest"
+                    ]
+                }
+            }
+        }
+    }
+}

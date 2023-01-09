@@ -1,0 +1,32 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Tamamo Library",
+		"description": "by Xiaodou",
+		"uuid": "41e3b9bd-2097-42a1-a976-910479e14114",
+		"version": [0, 0, 3],
+		"min_engine_version": [1, 14, 0]
+	},
+	"modules": [
+	    {
+			"type": "data",
+			"description": "新功能请在群内查看说明",
+			"uuid": "885c89eb-32c2-4112-8cf7-458f4383b46b",
+			"version": [0, 0, 3]
+		}
+	],
+	"settings": [
+	    {
+			"type": "label",
+			"text": "by Xiaodou7057"
+		},
+		{
+			"type": "label",
+			"text": "§c未经本人允许禁止将此行为包拆解内容分发"
+		}
+	],
+	"metadata": {
+		"authors": ["xd"],
+		"url": "https://jq.qq.com/?_wv=1027&k=zuChDzRq"
+	}
+}

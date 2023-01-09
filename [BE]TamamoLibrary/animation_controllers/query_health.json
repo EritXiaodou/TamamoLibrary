@@ -1,0 +1,486 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.player.xd_health.int": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "has_health_1": "query.health==1&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_2": "query.health==2&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_3": "query.health==3&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_4": "query.health==4&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_5": "query.health==5&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_6": "query.health==6&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_7": "query.health==7&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_8": "query.health==8&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_9": "query.health==9&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_10": "query.health==10&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_11": "query.health==11&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_12": "query.health==12&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_13": "query.health==13&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_14": "query.health==14&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_15": "query.health==15&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_16": "query.health==16&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_17": "query.health==17&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_18": "query.health==18&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_19": "query.health==19&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_20": "query.health==20&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_21": "query.health==21&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_22": "query.health==22&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_23": "query.health==23&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_24": "query.health==24&&!query.has_any_family('scriptcmd')"
+                        },
+                        {
+                            "has_health_creative": "query.has_any_family('scriptcmd')"
+                        }
+                    ]
+                },
+                "has_health_creative": {
+                    "on_entry": [
+                        "/tag @s remove has_health_1",
+                        "/tag @s remove has_health_2",
+                        "/tag @s remove has_health_3",
+                        "/tag @s remove has_health_4",
+                        "/tag @s remove has_health_5",
+                        "/tag @s remove has_health_6",
+                        "/tag @s remove has_health_7",
+                        "/tag @s remove has_health_8",
+                        "/tag @s remove has_health_9",
+                        "/tag @s remove has_health_10",
+                        "/tag @s remove has_health_11",
+                        "/tag @s remove has_health_12",
+                        "/tag @s remove has_health_13",
+                        "/tag @s remove has_health_14",
+                        "/tag @s remove has_health_15",
+                        "/tag @s remove has_health_16",
+                        "/tag @s remove has_health_17",
+                        "/tag @s remove has_health_18",
+                        "/tag @s remove has_health_19",
+                        "/tag @s remove has_health_20",
+                        "/tag @s remove has_health_21",
+                        "/tag @s remove has_health_22",
+                        "/tag @s remove has_health_23",
+                        "/tag @s remove has_health_24",
+                        "/tag @s remove is_full",
+                        "/tag @s remove is_full_max",
+                        "/tag @s remove is_low"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!query.has_any_family('scriptcmd')"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_1",
+                        "/tag @s remove is_low"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_1": {
+                    "on_entry": [
+                        "/tag @s add has_health_1",
+                        "/tag @s add is_low"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=1"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_1",
+                        "/tag @s remove is_low"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_2": {
+                    "on_entry": [
+                        "/tag @s add has_health_2",
+                        "/tag @s add is_low"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=2"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health2",
+                        "/tag @s remove is_low"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_3": {
+                    "on_entry": [
+                        "/tag @s add has_health_3",
+                        "/tag @s add is_low"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=3"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_3",
+                        "/tag @s remove is_low"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_4": {
+                    "on_entry": [
+                        "/tag @s add has_health_4",
+                        "/tag @s add is_low"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=4"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_4",
+                        "/tag @s remove is_low"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_5": {
+                    "on_entry": [
+                        "/tag @s add has_health_5",
+                        "/tag @s add is_low"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=5"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_5",
+                        "/tag @s remove is_low"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_6": {
+                    "on_entry": [
+                        "/tag @s add has_health_6",
+                        "/tag @s add is_low"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=6"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_6",
+                        "/tag @s remove is_low"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_7": {
+                    "on_entry": [
+                        "/tag @s add has_health_7",
+                        "/tag @s add is_low"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=7"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_7",
+                        "/tag @s remove is_low"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_8": {
+                    "on_entry": [
+                        "/tag @s add has_health_8",
+                        "/tag @s add is_low"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=8"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_8",
+                        "/tag @s remove is_low"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_9": {
+                    "on_entry": [
+                        "/tag @s add has_health_9"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=9"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_9"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_10": {
+                    "on_entry": [
+                        "/tag @s add has_health_10"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=10"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_10"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_11": {
+                    "on_entry": [
+                        "/tag @s add has_health_11"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=11"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_11"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_12": {
+                    "on_entry": [
+                        "/tag @s add has_health_12"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=12"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_12"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_13": {
+                    "on_entry": [
+                        "/tag @s add has_health_13"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=13"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_13"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_14": {
+                    "on_entry": [
+                        "/tag @s add has_health_14"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=14"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_14"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_15": {
+                    "on_entry": [
+                        "/tag @s add has_health_15"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=15"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_15"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_16": {
+                    "on_entry": [
+                        "/tag @s add has_health_16"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=16"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_16"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_17": {
+                    "on_entry": [
+                        "/tag @s add has_health_17"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=17"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_17"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_18": {
+                    "on_entry": [
+                        "/tag @s add has_health_18"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=18"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_18"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_19": {
+                    "on_entry": [
+                        "/tag @s add has_health_19"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=19"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_19"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_20": {
+                    "on_entry": [
+                        "/tag @s add has_health_20",
+                        "/tag @s add is_full"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=20"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_20",
+                        "/tag @s remove is_full"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_21": {
+                    "on_entry": [
+                        "/tag @s add has_health_21"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=21"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_21"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_22": {
+                    "on_entry": [
+                        "/tag @s add has_health_22"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=22"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_22"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_23": {
+                    "on_entry": [
+                        "/tag @s add has_health_23"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=23"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_23"
+                    ],
+                    "blend_transition": 0.2
+                },
+                "has_health_24": {
+                    "on_entry": [
+                        "/tag @s add has_health_24",
+                        "/tag @s add is_full_max"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.has_any_family('scriptcmd')||query.health!=24"
+                        }
+                    ],
+                    "on_exit": [
+                        "/tag @s remove has_health_24",
+                        "/tag @s remove is_full_max"
+                    ],
+                    "blend_transition": 0.2
+                }
+            }
+        }
+    }
+}
