@@ -1,4 +1,4 @@
-# TmamaoLibrary
+# TamamoLibrary
 一个MC基岩版的Molang检测项与指令交互标签库
 
 当前可用MolangTag标签 :
