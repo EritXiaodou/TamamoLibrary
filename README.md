@@ -36,3 +36,5 @@ tp @e[type=item] @p[r=5,tag=sneaking]
 
 下载：
 https://github.com/EritXiaodou/TmamaoLibrary/releases
+第三方：
+https://klpbbs.com/thread-80047-1-1.html
