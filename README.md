@@ -1,5 +1,5 @@
 # TamamoLibrary
-一个方便MC基岩版的Molang检测项与方块、指令交互标签库
+一个方便MC基岩版的Molang检测项与方块、指令进行交互的Addon Tag标签库
 
 当前可用MolangTag标签 :
 is_afking -挂机中
